@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.13)  19 JAN 2026 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.13)  19 JAN 2026 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\m3.brzezinski\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\m3.brzezinski\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Users\m3.brzezinski\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
 \c@chapter=\count276
@@ -339,22 +339,22 @@ LaTeX Font Info:    ... okay on input line 22.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=418.25368pt
-* \textheight=702.78308pt
+* \textheight=731.23584pt
 * \oddsidemargin=17.3571pt
 * \evensidemargin=17.3571pt
-* \topmargin=-38.1381pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -408,20 +408,16 @@ LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 2
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 25.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 25.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <6> on input line 25.
  [1
 
 {C:/Users/m3.brzezinski/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (main.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <10.95> on input line 2.
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -442,365 +438,355 @@ Rozdzia\l  1.
 ]
 Rozdzia\l  2.
 (algos/Adagrad/explain.tex
-<algos/Adagrad/Adagrad_wander.png, id=168, 494.84875pt x 330.23375pt>
+<algos/Adagrad/Adagrad_wander.png, id=170, 494.84875pt x 330.23375pt>
 File: algos/Adagrad/Adagrad_wander.png Graphic file (type png)
 <use algos/Adagrad/Adagrad_wander.png>
 Package pdftex.def Info: algos/Adagrad/Adagrad_wander.png  used on input line 8.
 (pdftex.def)             Requested size: 418.25368pt x 279.11777pt.
- [4
+) [4
 
-{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./algos/Adagrad/Adagrad_wander.png (PNG copy)>]) (algos/Adam/explain.tex) (algos/BFGS/explain.tex) (algos/CMAES/explain.tex [5]
-<algos/CMAES/range.png, id=187, 501.875pt x 332.24126pt>
+{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./algos/Adagrad/Adagrad_wander.png (PNG copy)>] (algos/Adam/explain.tex) (algos/BFGS/explain.tex) (algos/CMAES/explain.tex
+<algos/CMAES/range.png, id=183, 501.875pt x 332.24126pt>
 File: algos/CMAES/range.png Graphic file (type png)
 <use algos/CMAES/range.png>
 Package pdftex.def Info: algos/CMAES/range.png  used on input line 7.
 (pdftex.def)             Requested size: 334.60422pt x 221.52065pt.
-) (algos/NL-SHADE/explain.tex [6 <./algos/CMAES/range.png (PNG copy)>]) [7]
+) [5] (algos/NL-SHADE/explain.tex) [6 <./algos/CMAES/range.png (PNG copy)>]
 Rozdzia\l  3.
-(wstep/met_test.tex) (met_an/cec/teoria.tex) (met_an/cec/implem.tex) (met_an/net/teoria.tex [8
+(wstep/met_test.tex) (met_an/cec/teoria.tex) (met_an/cec/implem.tex) (met_an/net/teoria.tex) (met_an/net/implem.tex [7
 
-]) (met_an/net/implem.tex
-<met_an//net/placeholder.png, id=202, 3066.45625pt x 2407.99625pt>
+]
+<met_an//net/placeholder.png, id=200, 3066.45625pt x 2407.99625pt>
 File: met_an//net/placeholder.png Graphic file (type png)
 <use met_an//net/placeholder.png>
 Package pdftex.def Info: met_an//net/placeholder.png  used on input line 7.
 (pdftex.def)             Requested size: 418.25368pt x 328.40909pt.
- [9 <./met_an//net/placeholder.png>]
-Overfull \hbox (4.2247pt too wide) in paragraph at lines 20--21
-\T1/lmr/m/n/12 back-pro-pa-ga-cji do ucze-nia i ad-ap-ta-cji wag i bia-sów. Opty-ma-li-zo-wano funk-cj¦ kosztu. 
- []
-
-) [10]
+ [8 <./met_an//net/placeholder.png>]) [9]
 Rozdzia\l  4.
-[11
+[10
 
 ] (met_an/cec/wyniki.tex
-<met_an//cec//funkcje/F12013.png, id=218, 722.7pt x 722.7pt>
+<met_an//cec//funkcje/F12013.png, id=216, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F12013.png Graphic file (type png)
 <use met_an//cec//funkcje/F12013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F12013.png  used on input line 5.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
-<met_an//cec//funkcje/F12013_rec.png, id=219, 1445.4pt x 867.24pt>
+<met_an//cec//funkcje/F12013_rec.png, id=217, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F12013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F12013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F12013_rec.png  used on input line 10.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F22013.png, id=220, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F22013.png, id=218, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F22013.png Graphic file (type png)
 <use met_an//cec//funkcje/F22013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F22013.png  used on input line 17.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [12 <./met_an//cec//funkcje/F12013.png> <./met_an//cec//funkcje/F12013_rec.png>]
-<met_an//cec//funkcje/F22013_rec.png, id=230, 1445.4pt x 867.24pt>
+ [11 <./met_an//cec//funkcje/F12013.png> <./met_an//cec//funkcje/F12013_rec.png>]
+<met_an//cec//funkcje/F22013_rec.png, id=227, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F22013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F22013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F22013_rec.png  used on input line 22.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F32013.png, id=231, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F32013.png, id=228, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F32013.png Graphic file (type png)
 <use met_an//cec//funkcje/F32013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F32013.png  used on input line 29.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [13 <./met_an//cec//funkcje/F22013.png> <./met_an//cec//funkcje/F22013_rec.png>]
-<met_an//cec//funkcje/F32013_rec.png, id=240, 1445.4pt x 867.24pt>
+ [12 <./met_an//cec//funkcje/F22013.png> <./met_an//cec//funkcje/F22013_rec.png>]
+<met_an//cec//funkcje/F32013_rec.png, id=238, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F32013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F32013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F32013_rec.png  used on input line 34.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F42013.png, id=241, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F42013.png, id=239, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F42013.png Graphic file (type png)
 <use met_an//cec//funkcje/F42013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F42013.png  used on input line 41.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [14 <./met_an//cec//funkcje/F32013.png> <./met_an//cec//funkcje/F32013_rec.png>]
-<met_an//cec//funkcje/F42013_rec.png, id=250, 1445.4pt x 867.24pt>
+ [13 <./met_an//cec//funkcje/F32013.png> <./met_an//cec//funkcje/F32013_rec.png>]
+<met_an//cec//funkcje/F42013_rec.png, id=248, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F42013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F42013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F42013_rec.png  used on input line 46.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F52013.png, id=251, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F52013.png, id=249, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F52013.png Graphic file (type png)
 <use met_an//cec//funkcje/F52013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F52013.png  used on input line 53.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [15 <./met_an//cec//funkcje/F42013.png> <./met_an//cec//funkcje/F42013_rec.png>]
-<met_an//cec//funkcje/F52013_rec.png, id=260, 1445.4pt x 867.24pt>
+ [14 <./met_an//cec//funkcje/F42013.png> <./met_an//cec//funkcje/F42013_rec.png>]
+<met_an//cec//funkcje/F52013_rec.png, id=258, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F52013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F52013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F52013_rec.png  used on input line 58.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F62013.png, id=261, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F62013.png, id=259, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F62013.png Graphic file (type png)
 <use met_an//cec//funkcje/F62013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F62013.png  used on input line 65.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [16 <./met_an//cec//funkcje/F52013.png> <./met_an//cec//funkcje/F52013_rec.png>]
-<met_an//cec//funkcje/F62013_rec.png, id=270, 1445.4pt x 867.24pt>
+ [15 <./met_an//cec//funkcje/F52013.png> <./met_an//cec//funkcje/F52013_rec.png>]
+<met_an//cec//funkcje/F62013_rec.png, id=268, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F62013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F62013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F62013_rec.png  used on input line 70.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F72013.png, id=271, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F72013.png, id=269, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F72013.png Graphic file (type png)
 <use met_an//cec//funkcje/F72013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F72013.png  used on input line 77.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [17 <./met_an//cec//funkcje/F62013.png> <./met_an//cec//funkcje/F62013_rec.png>]
-<met_an//cec//funkcje/F72013_rec.png, id=280, 1445.4pt x 867.24pt>
+ [16 <./met_an//cec//funkcje/F62013.png> <./met_an//cec//funkcje/F62013_rec.png>]
+<met_an//cec//funkcje/F72013_rec.png, id=278, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F72013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F72013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F72013_rec.png  used on input line 82.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F82013.png, id=281, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F82013.png, id=279, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F82013.png Graphic file (type png)
 <use met_an//cec//funkcje/F82013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F82013.png  used on input line 89.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [18 <./met_an//cec//funkcje/F72013.png> <./met_an//cec//funkcje/F72013_rec.png>]
-<met_an//cec//funkcje/F82013_rec.png, id=291, 1445.4pt x 867.24pt>
+ [17 <./met_an//cec//funkcje/F72013.png> <./met_an//cec//funkcje/F72013_rec.png>]
+<met_an//cec//funkcje/F82013_rec.png, id=288, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F82013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F82013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F82013_rec.png  used on input line 94.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F92013.png, id=292, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F92013.png, id=289, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F92013.png Graphic file (type png)
 <use met_an//cec//funkcje/F92013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F92013.png  used on input line 101.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [19 <./met_an//cec//funkcje/F82013.png> <./met_an//cec//funkcje/F82013_rec.png>]
-<met_an//cec//funkcje/F92013_rec.png, id=301, 1445.4pt x 867.24pt>
+ [18 <./met_an//cec//funkcje/F82013.png> <./met_an//cec//funkcje/F82013_rec.png>]
+<met_an//cec//funkcje/F92013_rec.png, id=299, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F92013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F92013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F92013_rec.png  used on input line 106.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F102013.png, id=302, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F102013.png, id=300, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F102013.png Graphic file (type png)
 <use met_an//cec//funkcje/F102013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F102013.png  used on input line 113.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [20 <./met_an//cec//funkcje/F92013.png> <./met_an//cec//funkcje/F92013_rec.png>]
-<met_an//cec//funkcje/F102013_rec.png, id=311, 1445.4pt x 867.24pt>
+ [19 <./met_an//cec//funkcje/F92013.png> <./met_an//cec//funkcje/F92013_rec.png>]
+<met_an//cec//funkcje/F102013_rec.png, id=309, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F102013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F102013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F102013_rec.png  used on input line 118.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F112013.png, id=312, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F112013.png, id=310, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F112013.png Graphic file (type png)
 <use met_an//cec//funkcje/F112013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F112013.png  used on input line 125.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [21 <./met_an//cec//funkcje/F102013.png> <./met_an//cec//funkcje/F102013_rec.png>]
-<met_an//cec//funkcje/F112013_rec.png, id=321, 1445.4pt x 867.24pt>
+ [20 <./met_an//cec//funkcje/F102013.png> <./met_an//cec//funkcje/F102013_rec.png>]
+<met_an//cec//funkcje/F112013_rec.png, id=319, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F112013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F112013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F112013_rec.png  used on input line 130.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F122013.png, id=322, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F122013.png, id=320, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F122013.png Graphic file (type png)
 <use met_an//cec//funkcje/F122013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F122013.png  used on input line 137.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [22 <./met_an//cec//funkcje/F112013.png> <./met_an//cec//funkcje/F112013_rec.png>]
-<met_an//cec//funkcje/F122013_rec.png, id=331, 1445.4pt x 867.24pt>
+ [21 <./met_an//cec//funkcje/F112013.png> <./met_an//cec//funkcje/F112013_rec.png>]
+<met_an//cec//funkcje/F122013_rec.png, id=329, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F122013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F122013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F122013_rec.png  used on input line 142.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F132013.png, id=332, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F132013.png, id=330, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F132013.png Graphic file (type png)
 <use met_an//cec//funkcje/F132013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F132013.png  used on input line 149.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [23 <./met_an//cec//funkcje/F122013.png> <./met_an//cec//funkcje/F122013_rec.png>]
-<met_an//cec//funkcje/F132013_rec.png, id=341, 1445.4pt x 867.24pt>
+ [22 <./met_an//cec//funkcje/F122013.png> <./met_an//cec//funkcje/F122013_rec.png>]
+<met_an//cec//funkcje/F132013_rec.png, id=339, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F132013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F132013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F132013_rec.png  used on input line 154.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F142013.png, id=342, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F142013.png, id=340, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F142013.png Graphic file (type png)
 <use met_an//cec//funkcje/F142013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F142013.png  used on input line 161.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [24 <./met_an//cec//funkcje/F132013.png> <./met_an//cec//funkcje/F132013_rec.png>]
-<met_an//cec//funkcje/F142013_rec.png, id=352, 1445.4pt x 867.24pt>
+ [23 <./met_an//cec//funkcje/F132013.png> <./met_an//cec//funkcje/F132013_rec.png>]
+<met_an//cec//funkcje/F142013_rec.png, id=349, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F142013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F142013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F142013_rec.png  used on input line 166.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F152013.png, id=353, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F152013.png, id=350, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F152013.png Graphic file (type png)
 <use met_an//cec//funkcje/F152013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F152013.png  used on input line 173.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [25 <./met_an//cec//funkcje/F142013.png> <./met_an//cec//funkcje/F142013_rec.png>]
-<met_an//cec//funkcje/F152013_rec.png, id=362, 1445.4pt x 867.24pt>
+ [24 <./met_an//cec//funkcje/F142013.png> <./met_an//cec//funkcje/F142013_rec.png>]
+<met_an//cec//funkcje/F152013_rec.png, id=360, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F152013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F152013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F152013_rec.png  used on input line 178.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F162013.png, id=363, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F162013.png, id=361, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F162013.png Graphic file (type png)
 <use met_an//cec//funkcje/F162013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F162013.png  used on input line 185.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [26 <./met_an//cec//funkcje/F152013.png> <./met_an//cec//funkcje/F152013_rec.png>]
-<met_an//cec//funkcje/F162013_rec.png, id=372, 1445.4pt x 867.24pt>
+ [25 <./met_an//cec//funkcje/F152013.png> <./met_an//cec//funkcje/F152013_rec.png>]
+<met_an//cec//funkcje/F162013_rec.png, id=370, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F162013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F162013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F162013_rec.png  used on input line 190.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F172013.png, id=373, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F172013.png, id=371, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F172013.png Graphic file (type png)
 <use met_an//cec//funkcje/F172013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F172013.png  used on input line 197.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [27 <./met_an//cec//funkcje/F162013.png> <./met_an//cec//funkcje/F162013_rec.png>]
-<met_an//cec//funkcje/F172013_rec.png, id=382, 1445.4pt x 867.24pt>
+ [26 <./met_an//cec//funkcje/F162013.png> <./met_an//cec//funkcje/F162013_rec.png>]
+<met_an//cec//funkcje/F172013_rec.png, id=380, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F172013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F172013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F172013_rec.png  used on input line 202.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F182013.png, id=383, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F182013.png, id=381, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F182013.png Graphic file (type png)
 <use met_an//cec//funkcje/F182013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F182013.png  used on input line 209.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [28 <./met_an//cec//funkcje/F172013.png> <./met_an//cec//funkcje/F172013_rec.png>]
-<met_an//cec//funkcje/F182013_rec.png, id=392, 1445.4pt x 867.24pt>
+ [27 <./met_an//cec//funkcje/F172013.png> <./met_an//cec//funkcje/F172013_rec.png>]
+<met_an//cec//funkcje/F182013_rec.png, id=390, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F182013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F182013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F182013_rec.png  used on input line 214.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F192013.png, id=393, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F192013.png, id=391, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F192013.png Graphic file (type png)
 <use met_an//cec//funkcje/F192013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F192013.png  used on input line 221.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [29 <./met_an//cec//funkcje/F182013.png> <./met_an//cec//funkcje/F182013_rec.png>]
-<met_an//cec//funkcje/F192013_rec.png, id=402, 1445.4pt x 867.24pt>
+ [28 <./met_an//cec//funkcje/F182013.png> <./met_an//cec//funkcje/F182013_rec.png>]
+<met_an//cec//funkcje/F192013_rec.png, id=400, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F192013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F192013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F192013_rec.png  used on input line 226.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F202013.png, id=403, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F202013.png, id=401, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F202013.png Graphic file (type png)
 <use met_an//cec//funkcje/F202013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F202013.png  used on input line 233.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [30 <./met_an//cec//funkcje/F192013.png> <./met_an//cec//funkcje/F192013_rec.png>]
-<met_an//cec//funkcje/F202013_rec.png, id=413, 1445.4pt x 867.24pt>
+ [29 <./met_an//cec//funkcje/F192013.png> <./met_an//cec//funkcje/F192013_rec.png>]
+<met_an//cec//funkcje/F202013_rec.png, id=410, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F202013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F202013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F202013_rec.png  used on input line 238.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F212013.png, id=414, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F212013.png, id=411, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F212013.png Graphic file (type png)
 <use met_an//cec//funkcje/F212013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F212013.png  used on input line 245.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [31 <./met_an//cec//funkcje/F202013.png> <./met_an//cec//funkcje/F202013_rec.png>]
-<met_an//cec//funkcje/F212013_rec.png, id=423, 1445.4pt x 867.24pt>
+ [30 <./met_an//cec//funkcje/F202013.png> <./met_an//cec//funkcje/F202013_rec.png>]
+<met_an//cec//funkcje/F212013_rec.png, id=421, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F212013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F212013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F212013_rec.png  used on input line 250.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F222013.png, id=424, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F222013.png, id=422, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F222013.png Graphic file (type png)
 <use met_an//cec//funkcje/F222013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F222013.png  used on input line 257.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [32 <./met_an//cec//funkcje/F212013.png> <./met_an//cec//funkcje/F212013_rec.png>]
-<met_an//cec//funkcje/F222013_rec.png, id=433, 1445.4pt x 867.24pt>
+ [31 <./met_an//cec//funkcje/F212013.png> <./met_an//cec//funkcje/F212013_rec.png>]
+<met_an//cec//funkcje/F222013_rec.png, id=431, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F222013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F222013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F222013_rec.png  used on input line 262.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F232013.png, id=434, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F232013.png, id=432, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F232013.png Graphic file (type png)
 <use met_an//cec//funkcje/F232013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F232013.png  used on input line 269.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [33 <./met_an//cec//funkcje/F222013.png> <./met_an//cec//funkcje/F222013_rec.png>]
-<met_an//cec//funkcje/F232013_rec.png, id=443, 1445.4pt x 867.24pt>
+ [32 <./met_an//cec//funkcje/F222013.png> <./met_an//cec//funkcje/F222013_rec.png>]
+<met_an//cec//funkcje/F232013_rec.png, id=441, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F232013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F232013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F232013_rec.png  used on input line 274.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F242013.png, id=444, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F242013.png, id=442, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F242013.png Graphic file (type png)
 <use met_an//cec//funkcje/F242013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F242013.png  used on input line 281.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [34 <./met_an//cec//funkcje/F232013.png> <./met_an//cec//funkcje/F232013_rec.png>]
-<met_an//cec//funkcje/F242013_rec.png, id=453, 1445.4pt x 867.24pt>
+ [33 <./met_an//cec//funkcje/F232013.png> <./met_an//cec//funkcje/F232013_rec.png>]
+<met_an//cec//funkcje/F242013_rec.png, id=451, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F242013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F242013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F242013_rec.png  used on input line 286.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F252013.png, id=454, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F252013.png, id=452, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F252013.png Graphic file (type png)
 <use met_an//cec//funkcje/F252013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F252013.png  used on input line 293.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [35 <./met_an//cec//funkcje/F242013.png> <./met_an//cec//funkcje/F242013_rec.png>]
-<met_an//cec//funkcje/F252013_rec.png, id=463, 1445.4pt x 867.24pt>
+ [34 <./met_an//cec//funkcje/F242013.png> <./met_an//cec//funkcje/F242013_rec.png>]
+<met_an//cec//funkcje/F252013_rec.png, id=461, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F252013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F252013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F252013_rec.png  used on input line 298.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F262013.png, id=464, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F262013.png, id=462, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F262013.png Graphic file (type png)
 <use met_an//cec//funkcje/F262013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F262013.png  used on input line 305.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [36 <./met_an//cec//funkcje/F252013.png> <./met_an//cec//funkcje/F252013_rec.png>]
-<met_an//cec//funkcje/F262013_rec.png, id=474, 1445.4pt x 867.24pt>
+ [35 <./met_an//cec//funkcje/F252013.png> <./met_an//cec//funkcje/F252013_rec.png>]
+<met_an//cec//funkcje/F262013_rec.png, id=471, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F262013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F262013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F262013_rec.png  used on input line 310.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F272013.png, id=475, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F272013.png, id=472, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F272013.png Graphic file (type png)
 <use met_an//cec//funkcje/F272013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F272013.png  used on input line 317.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [37 <./met_an//cec//funkcje/F262013.png> <./met_an//cec//funkcje/F262013_rec.png>]
-<met_an//cec//funkcje/F272013_rec.png, id=484, 1445.4pt x 867.24pt>
+ [36 <./met_an//cec//funkcje/F262013.png> <./met_an//cec//funkcje/F262013_rec.png>]
+<met_an//cec//funkcje/F272013_rec.png, id=482, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F272013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F272013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F272013_rec.png  used on input line 322.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
-<met_an//cec//funkcje/F282013.png, id=485, 722.7pt x 722.7pt>
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
+<met_an//cec//funkcje/F282013.png, id=483, 722.7pt x 722.7pt>
 File: met_an//cec//funkcje/F282013.png Graphic file (type png)
 <use met_an//cec//funkcje/F282013.png>
 Package pdftex.def Info: met_an//cec//funkcje/F282013.png  used on input line 329.
 (pdftex.def)             Requested size: 292.77629pt x 292.7801pt.
- [38 <./met_an//cec//funkcje/F272013.png> <./met_an//cec//funkcje/F272013_rec.png>]
-<met_an//cec//funkcje/F282013_rec.png, id=494, 1445.4pt x 867.24pt>
+ [37 <./met_an//cec//funkcje/F272013.png> <./met_an//cec//funkcje/F272013_rec.png>]
+<met_an//cec//funkcje/F282013_rec.png, id=492, 1445.4pt x 867.24pt>
 File: met_an//cec//funkcje/F282013_rec.png Graphic file (type png)
 <use met_an//cec//funkcje/F282013_rec.png>
 Package pdftex.def Info: met_an//cec//funkcje/F282013_rec.png  used on input line 334.
-(pdftex.def)             Requested size: 543.73105pt x 326.23314pt.
+(pdftex.def)             Requested size: 585.55258pt x 351.33615pt.
 ) (met_an/net/wyniki.tex
-<met_an//net//graphs/1.png, id=495, 1078.0275pt x 427.5975pt>
+<met_an//net//graphs/1.png, id=493, 1078.0275pt x 427.5975pt>
 File: met_an//net//graphs/1.png Graphic file (type png)
 <use met_an//net//graphs/1.png>
 Package pdftex.def Info: met_an//net//graphs/1.png  used on input line 3.
 (pdftex.def)             Requested size: 418.25368pt x 165.9011pt.
- [39 <./met_an//cec//funkcje/F282013.png> <./met_an//cec//funkcje/F282013_rec.png>]) (porownanie.tex) [40 <./met_an//net//graphs/1.png>]
+ [38 <./met_an//cec//funkcje/F282013.png> <./met_an//cec//funkcje/F282013_rec.png>]) (porownanie.tex) [39 <./met_an//net//graphs/1.png>]
 Rozdzia\l  5.
 (podsumowanie/wyniki.tex
-Overfull \hbox (2.44pt too wide) in paragraph at lines 6--7
-[]\T1/lmr/m/n/12 Poniewa» L-BFGS-B wy-ª¡cz-nie aprok-sy-muje he-sjan, im wi¦-cej "szu-mów"posiada
+Overfull \hbox (1.9643pt too wide) in paragraph at lines 6--7
+[]\T1/lmr/m/n/10.95 Poniewa» L-BFGS-B wy-ª¡cz-nie aprok-sy-muje he-sjan, im wi¦-cej "szu-mów"posiada funk-
  []
 
-)
-Overfull \hbox (3.76707pt too wide) in paragraph at lines 11--101
-[]\T1/lmr/m/n/12 natomiast al-go-rytmy glo-balne maj¡ zna-cz¡cy pro-blem ze ska-lo-wal-no-±ci¡. wszyst-
- []
-
-(podsumowanie/cele.tex) (podsumowanie/sequelbait.tex) [41
+) (podsumowanie/cele.tex) (podsumowanie/sequelbait.tex) [40
 
 ] (biblio.tex
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2.
@@ -811,45 +797,25 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2.
  (C:\Users\m3.brzezinski\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (12.49622pt too wide) in paragraph at lines 3--4
-[][]$\T1/lmtt/m/n/12 https : / / en . wikipedia . org / wiki / Stochastic _ gradient _ descent # AdaGrad$[] 
+Overfull \hbox (11.53273pt too wide) in paragraph at lines 9--10
+[][]$\T1/lmtt/m/n/10.95 https : / / esezam . okno . pw . edu . pl / mod / book / view . php ? id = 1245 & chapterid = 1950$[] 
  []
 
 
-Overfull \hbox (6.32121pt too wide) in paragraph at lines 4--5
-[][]$\T1/lmtt/m/n/12 https : / / docs . pytorch . org / docs / stable / generated / torch . optim . Adam .
+Overfull \hbox (35.52766pt too wide) in paragraph at lines 10--11
+[][]$\T1/lmtt/m/n/10.95 https : / / www . researchgate . net / publication / 353782316 _ NL-[]SHADE-[]RSP _ Algorithm _
  []
 
 
-Overfull \hbox (18.67122pt too wide) in paragraph at lines 9--10
-[][]$\T1/lmtt/m/n/12 https : / / esezam . okno . pw . edu . pl / mod / book / view . php ? id = 1245 & chapterid =
+Overfull \hbox (390.94914pt too wide) in paragraph at lines 10--11
+\T1/lmtt/m/n/10.95 Optimization / link / 6226e6573c53d31ba4b03f4a / download ? _tp = eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19$[] 
  []
 
-
-Overfull \hbox (7.31421pt too wide) in paragraph at lines 10--11
-[][]$\T1/lmtt/m/n/12 https : / / www . researchgate . net / publication / 353782316 _ NL-[]SHADE-[]RSP _
- []
-
-
-Overfull \hbox (0.14621pt too wide) in paragraph at lines 10--11
-\T1/lmtt/m/n/12 Algorithm _ with _ Adaptive _ Archive _ and _ Selective _ Pressure _ for _ CEC _
- []
-
-
-Overfull \hbox (24.82521pt too wide) in paragraph at lines 10--11
-\T1/lmtt/m/n/12 2021 _ Numerical _ Optimization / link / 6226e6573c53d31ba4b03f4a / download ?
- []
-
-
-Overfull \hbox (129.78625pt too wide) in paragraph at lines 10--11
-\T1/lmtt/m/n/12 _tp = eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19$[] 
- []
-
-) [42
+) [41
 
 {C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 Rozdzia\l  6.
-(zalaczniki.tex) [43
+(zalaczniki.tex) [42
 
 ] (main.aux)
  ***********
@@ -860,17 +826,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3923250C447F304EA0EE39222505EFD9;3811.
  ) 
 Here is how much of TeX's memory you used:
- 13754 strings out of 467870
- 240219 string characters out of 5414483
- 637461 words of memory out of 5000000
- 42244 multiletter control sequences out of 15000+600000
- 678350 words of font info for 72 fonts, out of 8000000 for 9000
+ 13746 strings out of 467870
+ 240147 string characters out of 5414483
+ 637454 words of memory out of 5000000
+ 42239 multiletter control sequences out of 15000+600000
+ 677124 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,497b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (44 pages, 46970836 bytes).
+<C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/m3.brzezinski/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (43 pages, 47028991 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
  533 words of extra memory for PDF output out of 10000 (max. 10000000)
 
