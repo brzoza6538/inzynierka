@@ -1,0 +1,16 @@
+Można zauważyć przewagę algorytmów globalnych w zadaniach optymalizacyjnych CEC, oraz algorytmów stochastycznych dla sieci neuronowych
+
+Dodatkowo L-BFGS-B wykazuje zachowanie odmienne względem pozostałych użytych algorytmów stochastycznych, Adam i Adagrad.
+
+Adam, chociaż jest rozszerzeniem Adagrad, nie zawsze odnosi lepsze wyniki. 
+
+Zarówno Adam jak i Adagrad nie działają optymalnie gdy funkcje mają elementy nierównoległe z osiami.
+
+CMA-ES osiąga lepsze wyniki dla funkcji CEC2013, jednak czas obliczeń jest wyraźnie większy w porównaniu do algorytmów stochastycznych, mimo wykorzystania tej samej liczby wywołań funkcji celu.
+
+Algorytm Adam, pomimo wielu zalet, nie zawsze radzi sobie lepiej względem pozostałych algorytmów stchochastycznych. Dla funkcji (21 : Composition Function 1 (n=5,Rotated)), można zauważyć że radzi sobię najgorzej z nich wszystkich 
+
+Można zauważyć że Adam i Adagrad radzą sobie zaskakująco podobnie dla stosunkowo prostych funkcji, drugi momentum nie wydaje się być dla nich ogromną zmianą
+
+Adagrad potrafi poradzić sobie lepiej od Adama, ale wydaje się przy tym mniej stabilny (27: Composition Function 7 (n=5,Rotated)). Potecjalnie drugie momentum w algorytmie Adam zwiększa krok ponad potrzebę i dochodzi do chwilowego przestrzelenia względem Adagrad  
+

@@ -1,0 +1,30 @@
+By porównać algorytmy stochastyczne i globalne zaimplementowana została prosta sieć neuronowa do klasyfikacji obrazów z bazy MNIST. 
+
+Dla obu rodzajów algorytmów struktura sieci składa się z warstwy wejściowej z 784 neuronami, warstwy losowego embeddingu o wymiarze 200, dwóch warstw ukrytych po 16 neuronów każda oraz warstwy wyjściowej z 10 neuronami. Wielkości warstw ukrytych zostały wybrane na podstawie najczęściej spotykanych wartości w literaturze.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{met_an//net/placeholder.png}
+    \caption{}
+    % \label{fig:placeholder}
+\end{figure}
+
+Wykorzystując lemat Johnsona-Lindenstraussa, jesteśmy w stanie oszacować jak redukcja wymiarów przestrzeni wpływa na zachowanie zależności pomiędzy osobnikami w tej przestrzeni. Dzięki temu możliwe jest osadzenie danych w przestrzeni o mniejszej liczbie wymiarów kontrolując zniekształcenia zależności między osobnikami. 
+
+dla danego $\epsilon \in (0,1)$ i zbioru $X \subset R^{dim}$ o wielkości $|X| = n$ istnieje mapowanie $f:R^{dim} \rightarrow R^m$ gdzie nowy wymiar $m = O(\frac{\log n}{\epsilon^2})$ które osadza zbiór X do przestrzeni $R^m$ ze zniekształceniem maksymalnym równym $\epsilon$.
+
+Warstwa embeddingu losowego Dla 784 wymiarów mapuje osobniki do przestrzeni 200-wymiarowej więc można się spodziewać zniekształceń w zależnościach rzędu 0.12
+
+Jako reprezentant algorytmów stochastycznych został wykorzystany algorytm Adam, natomiast do algorytmów globalnych użyty został algorytm CMAES.
+
+W przypadku rozwiązania stochastycznego Zastosowano standardową metodę backpropagacji do uczenia i adaptacji wag i biasów. Optymalizowano funkcję kosztu.
+
+Dla algorytmów globalnych problem ma wymiarowość równą sumie wszystkich trenowanych parametrów, czyli sumę wag i biasów warstw ukrytych i wyjścia. Łącznie 3658 wymiarów. 
+
+Optymalizowane było accuracy. Każdemu osobnikowi przydzielano ocenę na podstawie 20 losowo wybranych przykładów ze zbioru treningowego. 
+
+Jako wspólną jednostkę czasu przyjęto jedno przejście przez sieć neuronową. W przypadku globalnego algorytmu CMA-ES oznaczało to inkrementację licznika po każdej ocenie pojedynczego osobnika, natomiast w przypadku stochastycznego algorytmu licznik był zwiększany po każdej parze operacji przejścia w przód(forward pass), oraz backpropagacji.
+
+Dla każdego algorytmu zapisywano najlepsze rozwiązania po przejściu przez daną część zasobów. Rozwiązania te były następnie oceniane wykorzystując zbiór testowy, aby określić zmianę accuracy w czasie oraz ECDF  
+
+

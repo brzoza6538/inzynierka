@@ -1,0 +1,37 @@
+
+Algorytm Adam (Adaptive Moment Estimation) wprowadza koncept adaptacji współczynnika uczenia za pomocą momentum oraz RMSProp do standardowego algorytmu stochastycznego spadku gradientu. 
+
+Adaptuje krok uczenia w każdym wymiarze oddzielnie, łącząc momentum i skalowanie drugiej chwili gradientu.
+
+Dynamiczny współczynnik uczenia algorytmu łączy dwa elementy - momentum obliczane na podstawie średniej ważonej gradientu z poprzednich kroków, oraz średnia ważona kwadratów gradientów (druga chwila gradientu), której zadaniem jest optymalizowanie wartości wzmacniając małe gradienty i wygłuszając za duże wartości.
+
+Można porównywać to rozwiązanie do kontrolera PID w automatyce. Momentum określa kierunek, druga chwila gradientu stabilizuje ruch algorytmu
+
+dla :
+
+$m^{(t)}_w := \beta_1  m^{(t-1)}_w + (1 - \beta_1) \nabla Q(w)^{(t)}  $
+
+$\hat{m}^{(t)}_w = \frac{m^{(t)}_w}{1 - \beta_1^t}$
+
+$v^{(t)}_w := \beta_2  v^{(t-1)}_w + (1 - \beta_2) (\nabla Q(w)^{(t)} )^2 $
+
+$\hat{v}^{(t)}_w = \frac{v^{(t)}_w}{1 - \beta_2^t}$
+
+$w^{(t)} := w^{(t-1)} - \eta \frac{\hat{m}_w^{(t)}}{\sqrt{\hat{v}_w^{(t)}}+ \epsilon}  $
+
+Gdzie: 
+
+$\eta$ - współczynnik uczenia 
+
+$Q(w)$ - funkcja celu dla wektora 'w'
+
+$\epsilon$ - niewielka liczba zapobiegająca dzieleniu przez zero
+
+$\hat{m}^{(t)}_w $ - momentum wektora 'w' podczas kroku 't'
+
+$\beta_1$ - współczynnik zapomnienia momentum
+
+$\hat{v}^{(t)}_w$ - druga chwila gradientu wektora 'w' podczas kroku 't'
+
+$\beta_2$ - współczynnik zapomnienia drugiej chwili gradientu
+

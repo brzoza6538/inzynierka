@@ -1,0 +1,119 @@
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{adjustbox}
+\usepackage[hidelinks]{hyperref}
+
+\title{Porównanie efektywności metod stochastycznego gradientu i metod globalnych w zadaniach optymalizacji i globalnej}
+
+\author{Michał Brzeziński}
+
+\begin{document}
+
+\maketitle
+
+
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\chapter*{Streszczenie}
+\addcontentsline{toc}{section}{Streszczenie}
+    \input{streszcz}
+
+
+\chapter{Wstęp}
+    \section{Cel i zakres pracy}
+        \input{wstep/opis}
+        
+
+\chapter{Algorytmy}
+    \section{Gradientowe}
+        \subsection{AdaGrad}
+            \input{algos/Adagrad/explain}
+            
+        \subsection{Adam}
+            \input{algos/Adam/explain}
+            
+        \subsection{L-BFGS-B}
+            \input{algos/BFGS/explain}
+            
+    \section{Globalne}
+        \subsection{CMAES}
+            \input{algos/CMAES/explain}
+            
+        \subsection{NL-SHADE-RSP-MID}
+            \input{algos/NL-SHADE/explain}
+
+
+\chapter{Sposoby analizy}
+    \section{Metody testowania}
+        \input{wstep/met_test}
+
+
+    \section{Benchmarki CEC}
+        \subsection{Opis problemu}
+            \input{met_an/cec/teoria}
+            
+        \subsection{Implementacja}
+            \input{met_an/cec/implem}
+                        
+
+            
+
+    \section{Sieci neuronowe}
+        \subsection{Opis problemu}
+            \input{met_an/net/teoria}
+            
+        \subsection{Implementacja}
+            \input{met_an/net/implem}
+                        
+
+
+
+\chapter{Wyniki eksperymentów}
+
+    \section{Wyniki dla benchmarków CEC}
+        \newpage
+        \input{met_an/cec/wyniki}
+        
+    \section{Wyniki dla sieci neuronowych}
+        \input{met_an/net/wyniki}
+        
+    \section{Porównanie wyników}
+        \input{porownanie}
+        
+
+
+\chapter{Podsumowanie i wnioski}
+    \section{Podsumowanie wniosków obu sposobów}
+        \input{podsumowanie/wyniki}
+        
+    \section{Osiągnięte cele}
+        \input{podsumowanie/cele}
+        
+    \section{Kierunki dalszego rozwoju}
+        \input{podsumowanie/sequelbait}
+        
+
+\newpage
+\chapter*{Bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
+    \input{biblio}
+    
+
+
+\chapter{Załączniki}
+    \input{zalaczniki}
+    
+
+
+\end{document}

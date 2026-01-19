@@ -1,0 +1,33 @@
+
+Algorytm AdaGrad (Adaptive Gradient Algorithm) jest zmodyfikowanym algorytmem stochastycznym spadku gradientu, dla którego współczynnik uczenia jest ciągle aktualizowany na podstawie historii gradientów poprzednich kroków.
+
+Dynamicznie zmieniający się współczynnik uczenia pozwala płynniej przechodzić z fazy eksploracji w fazę eksploatacji.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{algos/Adagrad/Adagrad_wander.png}
+    % \caption{Enter Caption}
+    % \label{fig:placeholder}
+\end{figure}
+
+Dla $g_t = \nabla Q_i(w)$
+
+$G = \displaystyle \sum_{\tau=1}^{t} g_\tau g_\tau^T$
+
+$w := w - \eta \ diag(G)^{-1/2} \odot g_t$
+
+w - aktualny wektor pozycji
+
+$\eta$ - współczynnik uczenia
+
+$Q_i(w)$ - funkcja celu w punkcie 'w' i dla zbioru danych treningowych 'i'
+
+$g_t$ - średnia gradientów funkcji celu w momencie 't' dla wszystkich próbek w batchu 'i' 
+
+G - historia złożona z sumy kwadratów wektorów poprzednich iteracji
+
+
+
+
+
+

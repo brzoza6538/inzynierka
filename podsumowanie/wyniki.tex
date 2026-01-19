@@ -1,0 +1,11 @@
+
+Algorytmy Adam, L-BFGS-B i Adagrad, poruszają w jednym wymiarze na raz. Można zauważyć patrząc na wyniki funkcji której najniższe punkty znajdują się na linii po przekątnej do osi (3 Rotated Bent Cigar Function), a funkcji z linią najniższych punktów równoległą z osią (5: Different Powers Function), że jest to poważny problem dla funkcji stochastycznych
+
+przewidywalnie algorytm CMAES, dzięki wykorzystywaniu rozproszonej po mapie populacji, pozwala na znacząco szybsze i dokładniejsze wyniki przy mniejszych ilościach wymiarów, jednak skalowalność okazała się o wiele gorsza w porównaniu do algorytmów stochastycznych
+
+Ponieważ L-BFGS-B wyłącznie aproksymuje hesjan, im więcej "szumów" posiada funkcja, oraz im mniej jest przewidywalna, tym gorzej sobie radzi (9: Rotated Weierstrass Function )
+
+
+sieci klasyczne, z algorytmem stochastycznym minimalizującym funkcję straty, nie zachowują zależności pomiędzy neuronami, każda aktualizacja wagi jest procesem lokalnym, liniowym i niezależnym od siebie.
+
+natomiast algorytmy globalne mają znaczący problem ze skalowalnością. wszystkie wagi są zmieniane na raz, zależnie od siebie, co znacząco zwiększa złożoność obliczeniową.
