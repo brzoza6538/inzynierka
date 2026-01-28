@@ -1,11 +1,27 @@
 
-Algorytmy Adam, L-BFGS-B i Adagrad, poruszają w jednym wymiarze na raz. Można zauważyć patrząc na wyniki funkcji której najniższe punkty znajdują się na linii po przekątnej do osi (3 Rotated Bent Cigar Function), a funkcji z linią najniższych punktów równoległą z osią (5: Different Powers Function), że jest to poważny problem dla funkcji stochastycznych
+\subsection*{Algorytmy stochastyczne}
+\begin{itemize}
+    \item Poruszają się niezależnie w każdym wymiarze, co sprawia, że są wrażliwe na kierunki przekątne w krajobrazie funkcji.
+\end{itemize}
 
-przewidywalnie algorytm CMAES, dzięki wykorzystywaniu rozproszonej po mapie populacji, pozwala na znacząco szybsze i dokładniejsze wyniki przy mniejszych ilościach wymiarów, jednak skalowalność okazała się o wiele gorsza w porównaniu do algorytmów stochastycznych
+\subsection*{Wpływ szumu}
+\begin{itemize}
+    \item Im bardziej złożony algorytm stochastyczny, tym bardziej wrażliwy jest na szum i chaotyczność funkcji.
+\end{itemize}
 
-Ponieważ L-BFGS-B wyłącznie aproksymuje hesjan, im więcej "szumów" posiada funkcja, oraz im mniej jest przewidywalna, tym gorzej sobie radzi (9: Rotated Weierstrass Function )
+\subsection*{Charakter algorytmów}
+\begin{itemize}
+    \item Adam, Adagrad i L-BFGS-B aktualizują parametry jeden wymiar na raz, co powoduje problemy w funkcjach, których minima lokalne tworzą obiekt nierównoległy do osi układu (np. F3 - ``Rotated Bent Cigar Function'').
+    \item CMA-ES i inne algorytmy globalne, dzięki rozproszonej populacji, radzą sobie lepiej z kierunkami przekątnymi i wykrywaniem ekstremów w krajobrazie funkcji.
+\end{itemize}
 
+\subsection*{Skalowalność}
+\begin{itemize}
+    \item Algorytmy stochastyczne skalują się liniowo względem liczby wymiarów.
+    \item Algorytmy globalne, jak CMA-ES, skalują się potęgowo, co ogranicza ich opłacalność przy dużych wymiarach, mimo ich dokładności dla mniejszych wymiarów.
+\end{itemize}
 
-sieci klasyczne, z algorytmem stochastycznym minimalizującym funkcję straty, nie zachowują zależności pomiędzy neuronami, każda aktualizacja wagi jest procesem lokalnym, liniowym i niezależnym od siebie.
-
-natomiast algorytmy globalne mają znaczący problem ze skalowalnością. wszystkie wagi są zmieniane na raz, zależnie od siebie, co znacząco zwiększa złożoność obliczeniową.
+\subsection*{Cechy specyficzne algorytmów}
+\begin{itemize}
+    \item Zmiana strategii w trakcie działania, np. w nl-shade-rsp-mid, sugeruje nastawienie na długotrwałą eksplorację, w odróżnieniu od CMA-ES, który utrzymuje stałą strategię.
+\end{itemize}

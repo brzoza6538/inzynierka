@@ -1,16 +1,40 @@
-Można zauważyć przewagę algorytmów globalnych w zadaniach optymalizacyjnych CEC, oraz algorytmów stochastycznych dla sieci neuronowych
 
-Dodatkowo L-BFGS-B wykazuje zachowanie odmienne względem pozostałych użytych algorytmów stochastycznych, Adam i Adagrad.
+\subsection*{Algorytmy globalne vs stochastyczne}
+\begin{itemize}
+    \item Algorytmy globalne osiągają wyraźną przewagę w zadaniach optymalizacyjnych CEC, zwłaszcza w niskich i średnich wymiarach, natomiast algorytmy stochastyczne sprawdzają się lepiej w optymalizacji sieci neuronowych.
+\end{itemize}
 
-Adam, chociaż jest rozszerzeniem Adagrad, nie zawsze odnosi lepsze wyniki. 
+\subsection*{Adam i Adagrad}
+\begin{itemize}
+    \item Pomimo zastosowania momentum, oba algorytmy osiągają podobne wyniki.
+    \item Nie działają optymalnie, gdy zbiory minimów lokalnych funkcji (doliny funkcji) tworzą „rynny” nierównoległe do osi układu współrzędnych. Można porównać funkcję F5 - ``Different Powers Function'' z ``doliną'' równoległą do osi, oraz F3 - ``Rotated Bent Cigar Function''.
+    \item Algorytm Adam, pomimo wielu zalet, nie zawsze radzi sobie lepiej względem algorytmu Adagrad. Widać problemy gdy funkcja ma gwałtowne spadki jak funkcja F21 - ``Composition Function 1 (n=5,Rotated)''. Można zauważyć, że radzi sobie znacząco gorzej i różnica w wynikach jest większa im więcej jest wymiarów.
+\end{itemize}
 
-Zarówno Adam jak i Adagrad nie działają optymalnie gdy funkcje mają elementy nierównoległe z osiami.
+\subsection*{L-BFGS-B}
+\begin{itemize}
+    \item Wykazuje podobne ograniczenia co Adam i Adagrad. Można zauważyć te same problemy dla funkcji o „rynnowej” strukturze minimów. Jednak zwykle osiąga lepsze wyniki, czasem porównywalne z algorytmami globalnymi.
+    \item Dla większości przypadków krzywe ECDF tego algorytmu często przypominają wykresy Adagrad, przesunięte o około 20\% w zakresie przebitych progów jakości.
+    \item Jest bardzo wrażliwy na szum i chaotyczność funkcji, ponieważ aproksymacja hesjanu staje się niestabilna (F9 - ``Rotated Weierstrass Function'').
+    \item Dla funkcji ``Rotated Lunacek Bi\_Rastrigin Function'' widać, że czasami Adagrad i Adam potrafią przebić jakość rozwiązań algorytmu L-BFGS-B, jeśli funkcja ma wystarczająco dużo szumu i jest wystarczająco chaotyczna wizualnie.
+\end{itemize}
 
-CMA-ES osiąga lepsze wyniki dla funkcji CEC2013, jednak czas obliczeń jest wyraźnie większy w porównaniu do algorytmów stochastycznych, mimo wykorzystania tej samej liczby wywołań funkcji celu.
+\subsection*{CMA-ES}
+\begin{itemize}
+    \item Osiąga najlepsze wyniki w funkcjach CEC2013 w porównaniu do pozostałych algorytmów.
+    \item Dzięki rozproszeniu populacji i estymacji średnich wartości parametrów, pozwala na dokładniejszą eksplorację krajobrazu funkcji i szybsze znalezienie ekstremów przy mniejszej liczbie wymiarów.
+    \item Jak teoretyzowano tworząc nl-shade-rsp-mid, prawdopodobnie ma to związek z teorią, że środek populacji ma większe szanse być lepszą aproksymacją ekstremum od pojedynczego punktu.
+    \item Czas obliczeń algorytmów stochastycznych rośnie liniowo względem ilości wymiarów, natomiast algorytmów globalnych potęgowo. Z wyników CEC widać, że algorytmy globalne radzą sobie o wiele lepiej od stochastycznych dla większej liczby wymiarów, jednak dla problemu optymalizacji sieci neuronowej algorytmy globalne przestają być opłacalne.
+\end{itemize}
 
-Algorytm Adam, pomimo wielu zalet, nie zawsze radzi sobie lepiej względem pozostałych algorytmów stchochastycznych. Dla funkcji (21 : Composition Function 1 (n=5,Rotated)), można zauważyć że radzi sobię najgorzej z nich wszystkich 
+\subsection*{nl-shade-rsp-mid}
+\begin{itemize}
+    \item Działa wyraźnie gorzej niż CMA-ES jako algorytm globalny. Optymalizacja zajmuje znacząco dłużej, a punkty nie są równie dobrej jakości.
+    \item Zmiana metody krzyżowania w połowie przebiegu sugeruje, że algorytm był zaprojektowany z nadzieją na dłuższy czas działania, w przeciwieństwie do CMA-ES, który konsekwentnie wykorzystuje tę samą strategię przez cały przebieg.
+\end{itemize}
 
-Można zauważyć że Adam i Adagrad radzą sobie zaskakująco podobnie dla stosunkowo prostych funkcji, drugi momentum nie wydaje się być dla nich ogromną zmianą
-
-Adagrad potrafi poradzić sobie lepiej od Adama, ale wydaje się przy tym mniej stabilny (27: Composition Function 7 (n=5,Rotated)). Potecjalnie drugie momentum w algorytmie Adam zwiększa krok ponad potrzebę i dochodzi do chwilowego przestrzelenia względem Adagrad  
-
+\subsection*{Sieci neuronowe}
+\begin{itemize}
+    \item Klasyczne sieci z algorytmem stochastycznym minimalizującym funkcję straty nie zachowują zależności między neuronami — każda aktualizacja wagi jest lokalna, liniowa i niezależna.
+    \item Algorytmy globalne zmieniają wszystkie wagi jednocześnie, co zwiększa złożoność obliczeniową i ogranicza skalowalność w zastosowaniach sieciowych.
+\end{itemize}
