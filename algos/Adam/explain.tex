@@ -1,11 +1,11 @@
 
-Algorytm Adam (Adaptive Moment Estimation) wprowadza koncept adaptacji współczynnika uczenia za pomocą momentum oraz RMSProp do standardowego algorytmu stochastycznego spadku gradientu. 
+Algorytm Adam (Adaptive Moment Estimation) wprowadza koncept adaptacji współczynnika uczenia za pomocą momentu oraz RMSProp do standardowego algorytmu stochastycznego spadku gradientu. 
 
-Adaptuje krok uczenia w każdym wymiarze oddzielnie, łącząc momentum i skalowanie drugiej chwili gradientu.
+Adaptuje krok uczenia w każdym wymiarze oddzielnie, łącząc momentu i skalowanie drugiej chwili gradientu. 
 
-Dynamiczny współczynnik uczenia algorytmu łączy dwa elementy - momentum obliczane na podstawie średniej ważonej gradientu z poprzednich kroków, oraz średnia ważona kwadratów gradientów (druga chwila gradientu), której zadaniem jest optymalizowanie wartości wzmacniając małe gradienty i wygłuszając za duże wartości.
+Dynamiczny współczynnik uczenia algorytmu łączy dwa elementy - momentu obliczane na podstawie średniej ważonej gradientu z poprzednich kroków, oraz średnią ważoną kwadratów gradientów (druga chwila gradientu), wzmacniając małe gradienty i wygłuszając za duże wartości.
 
-Można porównywać to rozwiązanie do kontrolera PID w automatyce. Momentum określa kierunek, druga chwila gradientu stabilizuje ruch algorytmu
+Można porównywać to rozwiązanie do kontrolera PID w automatyce. Momentu określa kierunek, druga chwila gradientu normalizuje, skaluje i stabilizuje ruch algorytmu
 
 dla :
 
@@ -27,11 +27,11 @@ $Q(w)$ - funkcja celu dla wektora 'w'
 
 $\epsilon$ - niewielka liczba zapobiegająca dzieleniu przez zero
 
-$\hat{m}^{(t)}_w $ - momentum wektora 'w' podczas kroku 't'
+$\hat{m}^{(t)}_w $ - estymator pierwszego momentu gradientu wektora $w$ po korekcji obciążenia podczas kroku 't'
 
 $\beta_1$ - współczynnik zapomnienia momentum
 
-$\hat{v}^{(t)}_w$ - druga chwila gradientu wektora 'w' podczas kroku 't'
+$\hat{v}^{(t)}_w$ - estymator drugiego momentu gradientu wektora $w$ po korekcji obciążenia podczas kroku 't'
 
 $\beta_2$ - współczynnik zapomnienia drugiej chwili gradientu
 

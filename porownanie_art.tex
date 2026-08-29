@@ -1,0 +1,66 @@
+
+\subsection*{Algorytmy globalne vs stochastyczne}
+\begin{itemize}
+    \item Algorytmy globalne osiągają wyraźną przewagę w zadaniach optymalizacyjnych CEC, zwłaszcza w problemach o niewielkiej wymiarowości, natomiast algorytmy stochastyczne sprawdzają się lepiej w optymalizacji sieci neuronowych
+
+    \item Widać znaczenie linearnie rosnącej złożoności obliczeniowej względem ilości wymiarów, algorytmów stochastycznych, podczas optymalizacji 3658 wymiarowego problemu klasyfikacji MNIST, w porównaniu do algorytmów globalnych
+    
+
+\end{itemize}
+
+
+\subsection*{Adam i Adagrad}
+\begin{itemize}
+    \item Pomimo różnicy momentum, oba algorytmy osiągają podobne wyniki, Adagrad zwykle radząc sobie nieznacznie lepiej
+
+    \item Algorytmy nie mają wbudowanej obsługi błędów związanych z opuszczeniem wyznaczonej przestrzeni. Istnieje ryzyko eksplozji poza zakresem, jak można zobaczyć na funkcji F7 "Rotated Schaffers F7 Function"
+
+
+% TODO
+    \item Algorytm Adam nie działa optymalnie, gdy zbiory minimów lokalnych funkcji (doliny funkcji) tworzą „rynny” nierównoległe do osi układu współrzędnych. Można porównać funkcję F5 - ``Different Powers Function'' z ``doliną'' równoległą do osi, oraz F3 - ``Rotated Bent Cigar Function''
+    
+    \item czy jak oś równoległa łatwiej przeskoczyć?
+
+\end{itemize}
+
+
+
+% \subsection*{L-BFGS-B}
+% \begin{itemize}
+%     \item Wykazuje podobne ograniczenia co Adam i Adagrad. Można zauważyć te same problemy dla funkcji o „rynnowej” strukturze minimów. Jednak zwykle osiąga lepsze wyniki, czasem porównywalne z algorytmami globalnymi.
+%     \item Dla większości przypadków krzywe ECDF tego algorytmu często przypominają wykresy Adagrad, przesunięte o około 20\% w zakresie przebitych progów jakości.
+%     \item Jest bardzo wrażliwy na szum i chaotyczność funkcji, ponieważ aproksymacja hesjanu staje się niestabilna (F9 - ``Rotated Weierstrass Function'').
+%     \item Dla funkcji ``Rotated Lunacek Bi\_Rastrigin Function'' widać, że czasami Adagrad i Adam potrafią przebić jakość rozwiązań algorytmu L-BFGS-B, jeśli funkcja ma wystarczająco dużo szumu i jest wystarczająco chaotyczna wizualnie.
+% \end{itemize}
+
+\subsection*{CMA-ES}
+\begin{itemize}
+    \item Osiąga najlepsze wyniki w funkcjach CEC2013 w porównaniu do pozostałych algorytmów.
+
+    \item Dzięki rozproszeniu populacji i estymacji średnich wartości parametrów, pozwala na dokładniejszą eksplorację krajobrazu funkcji i szybsze znalezienie ekstremów przy mniejszej liczbie wymiarów.
+
+    \item Potencjalnie może być to powiązane z założeniem na którym opiera się rozszeżenie algorytmu NLShade, 'mid', według którego środek populacji ma większe szanse być lepszą aproksymacją ekstremum od pojedynczego punktu.
+
+    \item Czas obliczeń algorytmów stochastycznych rośnie liniowo względem ilości wymiarów, natomiast algorytmów globalnych potęgowo. Z wyników CEC widać, że algorytmy globalne radzą sobie o wiele lepiej od stochastycznych dla większej liczby wymiarów, jednak dla problemu optymalizacji sieci neuronowej algorytmy globalne przestają być opłacalne.
+\end{itemize}
+
+\subsection*{nl-shade-rsp-mid}
+\begin{itemize}
+    \item Działa wyraźnie gorzej niż CMA-ES jako algorytm globalny. Optymalizacja zajmuje znacząco dłużej, a punkty nie są równie dobrej jakości.
+
+    \item Zmiana metody krzyżowania w połowie przebiegu sugeruje, że algorytm był zaprojektowany z nadzieją na dłuższy czas działania, w przeciwieństwie do CMA-ES, który konsekwentnie wykorzystuje tę samą strategię przez cały przebieg.
+\end{itemize}
+
+\subsection*{Sieci neuronowe}
+\begin{itemize}
+
+    \item W przeciwieństwie do algorytmów globalnych, które operują na całym wektorze parametrów jako jednym punkcie w przestrzeni optymalizacji, metody gradientowe wyznaczają kierunek aktualizacji parametrów na podstawie lokalnego gradientu funkcji kosztu. W rezultacie współzależności pomiędzy parametrami są uwzględniane poprzez lokalną strukturę funkcji kosztu w otoczeniu aktualnego rozwiązania, a nie poprzez bezpośrednie globalne przeszukiwanie przestrzeni parametrów.
+
+    \item W klasycznych sieciach neuronowych optymalizowanych algorytmami stochastycznymi, aktualizacja każdego parametru jest wyznaczana na podstawie jego lokalnego gradientu. Parametry nie są jednak od siebie niezależne, ponieważ gradient danego parametru zależy od pozostałych parametrów sieci poprzez strukturę połączeń oraz propagację sygnału i błędu. Oznacza to, że metoda gradientowa uwzględnia współzależności pomiędzy parametrami, jednak wykorzystuje w tym celu jedynie lokalną informację o funkcji kosztu.
+
+    \item Algorytmy globalne zmieniają wszystkie wagi jednocześnie, co zwiększa złożoność obliczeniową i ogranicza skalowalność w zastosowaniach sieciowych.
+\end{itemize}
+
+
+
+% potencjał an zrównoleglenie i dopracowanie paramterów

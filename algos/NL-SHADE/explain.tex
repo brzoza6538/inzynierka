@@ -1,24 +1,39 @@
-NL-SHADE-RSP-MID to rozszerzenie algorytmu DE, adaptacyjnie ustawiające parametry krzyżowania i mutacji Cr i F, na podstawie populacji oraz archiwum rozwiązań.
+Algorytm NL-SHADE-RSP-MID to rozszerzenie algorytmu DE, adaptacyjnie ustawiające parametry krzyżowania i mutacji Cr i F, na podstawie populacji oraz archiwum rozwiązań.
+
+gdzie:
+
+F — współczynnik skalowania różnicy wektorów w mutacji,
+
+CR — współczynnik krzyżowania
+
 
 NL-SHADE: 
+\begin{itemize}
+    \item Dla każdego osobnika generowany jest wektor mutant na podstawie trzech osobników, pierwszy wybrany z najlepszego fragmentu populacji, drugi z pełnej populacji, trzeci z populacji lub potencjalnie archiwum.
 
-Dla każdego osobnika generowany jest wektor mutant na podstawie trzech losowo wybranych osobników z populacji i potencjalnie archiwum.
+    \item Do operatora różnicowego mutacji może zostać wykorzystany punkt wylosowany z archiwum, które jest złożone z rodziców, którzy zostali zastąpieni potomkami z lepszym wynikiem.
 
-Do operatora różnicowego mutacji może zostać wykorzystany punkt wylosowany z archiwum, które jest złożone z rodziców, którzy zostali zastąpieni potomkami z lepszym wynikiem.
+    \item Indywidualnie wartości Cr i F są generowane wykorzystując losową wartość z pamięci Cr i F jako centra rozkładów. 
 
-Indywidualnie wartości Cr i F są generowane wykorzystując losową wartość z pamięci Cr i F jako centra rozkładów. 
+    \item Określamy dla każdego osobnika poprawę wartości funkcji celu względem poprzedniej generacji oraz wartości Cr i F użyte na nich. Na podstawie tych danych, średnią ważoną Lehmera obliczamy najlepszą preferowaną wartość Cr i F dla generacji. Wynik jest zapisywany na jednej z pozycji w pamięci Cr i F.
 
-Określamy dla każdego osobnika poprawę wartości funkcji celu względem poprzedniej generacji oraz wartości Cr i F użyte na nich. Na podstawie tych danych, średnią ważoną Lehmera obliczamy najlepszą preferowaną wartość Cr i F dla generacji. Wynik jest zapisywany na jednej z pozycji w pamięci Cr i F.
+    \item Pod koniec generacji porównywane są wartości funkcji celu osobników powstałych z mutacji, które wykorzystały archiwum z tymi, które tego nie zrobiły i, na podstawie sukcesu potomków, obliczane jest prawdopodobieństwo użycia archiwum w mutacji dla następnej generacji.
 
-Pod koniec generacji porównywane są wartości funkcji celu osobników powstałych z mutacji, które wykorzystały archiwum z tymi, które tego nie zrobiły i, na podstawie sukcesu potomków, obliczane jest prawdopodobieństwo użycia archiwum w mutacji dla następnej generacji.
-
-Rozmiar populacji oraz archiwum jest zmieniany w zależności od liczby wywołań funkcji celu w stosunku do limitu.
+    \item Rozmiar populacji oraz archiwum jest zmieniany w zależności od liczby wywołań funkcji celu w stosunku do limitu.
+    
+\end{itemize}
 
 RSP:
-
-Jeśli punkt nie mieści się w podanej przestrzeni danych, jest generowany ponownie.
+\begin{itemize}
+    \item Jeśli punkt nie mieści się w podanej przestrzeni danych, jest generowany ponownie wykorzystując tą samą metodę używaną do generacji potomków z użyciem trzech punktów z poprzedniej generacji. 
+    \item Kandydat na nowego potomka jest generowany do momentu aż wszystkie jego wymiary mieszczą się w okrślonym zakresie danych, lub zostanie przekroczony limit prób
+    \item Jeśli punkt pozostanie poza zakresem danych przez określoną liczbę prób, generowane zostają również nowe Cr, oraz F
+    \item Jeśli po kolejnych próbach potomek nadal zawiera wartości poza zakresem, wymiar osobnika z wartością poza zakresem jest bezpośrednio losowany z tego zakresu 
+\end{itemize}
 
 MID:
+\begin{itemize}
+    \item Populacja jest klastrowana względem pozycji w przestrzeni rozwiązań. Zgrupowania są porównywane żeby określić podział z najlepiej rozdzielonymi klastrami, oraz porównać go z pełnym zbiorem by określić czy populacja ma więcej niż jedno zgrupowanie punktów, czy podział na klastry jest dostatecznie dobrze separowany. Wyznaczany jest centroid każdego zgrupowania i wybierany jest ten z najlepszym wynikiem. 
+    \item Jeśli średnia pozycja populacji mean, się nie zmienia przez określoną ilość generacji, zostaje to potraktowane jako sygnał stagnacji i algorytm jest zatrzymywany 
 
-Populacja jest klastrowana względem pozycji w przestrzeni rozwiązań, porównywane są wartości funkcji celu żeby wyznaczyć najlepszy podział, oraz porównać go z pełnym zbiorem żeby określić czy populacja ma zgrupowanie kilku punktów. Wyznaczany jest centroid najlepszego zgrupowania. Jeśli centroid się nie zmienia, oznacza to stagnację i algorytm jest zatrzymywany
-
+\end{itemize}

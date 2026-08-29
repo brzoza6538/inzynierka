@@ -1,122 +1,235 @@
 
-\documentclass[11pt,a4paper]{report}
+% \documentclass[11pt,a4paper]{report}
 
-\usepackage[a4paper,top=2cm,bottom=2cm]{geometry}
+% \usepackage[a4paper,top=2cm,bottom=2cm]{geometry}
 
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+% \usepackage[T1]{fontenc}
+% \usepackage{lmodern}
 
-\usepackage[utf8]{inputenc}
-\usepackage[polish]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage[polish]{babel}
 
+% \usepackage{graphicx}
+% \usepackage{float}
+% \usepackage{caption}
+% \usepackage{adjustbox}
+% \usepackage[hidelinks]{hyperref}
+
+% \title{Porównanie efektywności metod stochastycznego gradientu i metod globalnych w zadaniach optymalizacji i globalnej}
+
+% \author{Michał Brzeziński}
+
+% \begin{document}
+
+% \maketitle
+
+
+% \tableofcontents
+
+
+% \chapter*{Streszczenie}
+% \addcontentsline{toc}{section}{Streszczenie}
+%     \input{streszcz}
+
+
+% \chapter{Wstęp}
+%     \section{Cel i zakres pracy}
+%         \input{wstep/opis}
+        
+
+% \chapter{Algorytmy}
+%     \section{Gradientowe}
+%         \subsection{AdaGrad}
+%             \input{algos/Adagrad/explain}
+            
+%         \subsection{Adam}
+%             \input{algos/Adam/explain}
+            
+%         \subsection{L-BFGS-B}
+%             \input{algos/BFGS/explain}
+            
+%     \section{Globalne}
+%         \subsection{CMAES}
+%             \input{algos/CMAES/explain}
+            
+%         \subsection{NL-SHADE-RSP-MID}
+%             \input{algos/NL-SHADE/explain}
+
+
+% \chapter{Metody ewaluacji}
+%     \section{Metody testowania}
+%         \input{wstep/met_test}
+
+
+%     \section{Benchmarki CEC}
+%         \subsection{Opis problemu}
+%             \input{met_an/cec/teoria}
+            
+%         \subsection{Implementacja}
+%             \input{met_an/cec/implem}
+                        
+
+            
+
+%     \section{Sieci neuronowe}
+%         \subsection{Opis problemu}
+%             \input{met_an/net/teoria}
+            
+%         \subsection{Implementacja}
+%             \input{met_an/net/implem}
+                        
+
+
+
+% \chapter{Wyniki eksperymentów}
+
+%     \section{Wyniki dla benchmarków CEC}
+%         \newpage
+%         \input{met_an/cec/wyniki}
+        
+%     \section{Wyniki dla sieci neuronowych}
+%         \input{met_an/net/wyniki}
+        
+%     \section{Porównanie wyników}
+%         \input{porownanie}
+        
+
+
+% \chapter{Podsumowanie i wnioski}
+%     \section{Wnioski}
+%         \input{podsumowanie/wyniki}
+        
+%     \section{Osiągnięte cele}
+%         \input{podsumowanie/cele}
+        
+%     \section{Kierunki dalszego rozwoju}
+%         \input{podsumowanie/sequelbait}
+
+
+
+
+% \chapter{Załączniki}
+%     \input{zalaczniki}
+
+% \chapter*{Bibliografia}
+%     \addcontentsline{toc}{section}{Bibliografia}
+%     \input{biblio}
+    
+
+
+
+% \end{document}
+
+
+
+\documentclass[runningheads]{llncs}
 \usepackage{graphicx}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{float}
-\usepackage{caption}
 \usepackage{adjustbox}
+\usepackage{caption}
 \usepackage[hidelinks]{hyperref}
+\usepackage{subcaption}
 
-\title{Porównanie efektywności metod stochastycznego gradientu i metod globalnych w zadaniach optymalizacji i globalnej}
 
+
+\title{Porównanie efektywności metod stochastycznego gradientu i metod globalnych w zadaniach optymalizacji globalnej}
+\titlerunning{Porównanie metod stochastycznych i globalnych}
+ 
 \author{Michał Brzeziński}
+\institute{Wydział Elektroniki i Technik Informacyjnych}
+
+
+% \makeatletter
+% \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+%   {-4pt \@plus -2pt \@minus -2pt}%
+%   {4pt \@plus 1pt}%
+% %   {\normalfont\normalsize\bfseries}}
+%   {\normalfont\footnotesize\bfseries}}
+
+% \makeatother
+
+\makeatletter
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}
+  {-4pt \@plus -2pt \@minus -2pt}
+  {4pt \@plus 1pt}             
+  {\normalfont\footnotesize\bfseries}}
+\makeatother
+
 
 \begin{document}
 
 \maketitle
 
+\setcounter{secnumdepth}{1} 
+\setcounter{tocdepth}{1} 
 
-\tableofcontents
-
-
-\chapter*{Streszczenie}
-\addcontentsline{toc}{section}{Streszczenie}
+\section{Streszczenie}
+    \addcontentsline{toc}{section}{Streszczenie}
     \input{streszcz}
 
-
-\chapter{Wstęp}
-    \section{Cel i zakres pracy}
+\section{Wstęp}
+    \subsection{Cel i zakres pracy}
         \input{wstep/opis}
-        
 
-\chapter{Algorytmy}
-    \section{Gradientowe}
-        \subsection{AdaGrad}
-            \input{algos/Adagrad/explain}
-            
-        \subsection{Adam}
+\section{Algorytmy}
+    \subsection{Gradientowe}
+        \subsubsection*{Adam}
             \input{algos/Adam/explain}
             
-        \subsection{L-BFGS-B}
+        \subsubsection*{AdaGrad} 
+            \input{algos/Adagrad/explain}
+
+        \subsubsection*{L-BFGS-B}
             \input{algos/BFGS/explain}
-            
-    \section{Globalne}
-        \subsection{CMAES}
+
+    \subsection{Globalne}
+        \subsubsection*{CMAES}
             \input{algos/CMAES/explain}
-            
-        \subsection{NL-SHADE-RSP-MID}
+
+        \subsubsection*{NL-SHADE-RSP-MID}
             \input{algos/NL-SHADE/explain}
 
-
-\chapter{Sposoby analizy}
-    \section{Metody testowania}
+\section{Metody ewaluacji}
+    \subsection{Metody testowania}
         \input{wstep/met_test}
 
+\subsection{Benchmarki CEC}
+    \subsubsection*{Opis problemu}
+        \input{met_an/cec/teoria}
 
-    \section{Benchmarki CEC}
-        \subsection{Opis problemu}
-            \input{met_an/cec/teoria}
-            
-        \subsection{Implementacja}
-            \input{met_an/cec/implem}
-                        
+\subsubsection*{Implementacja}
+    \input{met_an/cec/implem}
 
-            
+\subsection{Sieci neuronowe}
+    \subsubsection*{Opis problemu}
+        \input{met_an/net/teoria}
 
-    \section{Sieci neuronowe}
-        \subsection{Opis problemu}
-            \input{met_an/net/teoria}
-            
-        \subsection{Implementacja}
-            \input{met_an/net/implem}
-                        
+\subsubsection*{Implementacja}
+    \input{met_an/net/implem}
 
+\section{Wyniki eksperymentów}
+    \subsection{wybrane wykresy}
+        \input{wybrane_wyniki}
 
-
-\chapter{Wyniki eksperymentów}
-
-    \section{Wyniki dla benchmarków CEC}
-        \newpage
-        \input{met_an/cec/wyniki}
-        
-    \section{Wyniki dla sieci neuronowych}
-        \input{met_an/net/wyniki}
-        
-    \section{Porównanie wyników}
-        \input{porownanie}
+    \subsection{Obserwacje}
+        \input{porownanie_art}
         
 
-
-\chapter{Podsumowanie i wnioski}
-    \section{Wnioski}
+\section{Podsumowanie i wnioski}
+    \subsection{Podsumowanie wniosków obu sposobów}
         \input{podsumowanie/wyniki}
-        
-    \section{Osiągnięte cele}
-        \input{podsumowanie/cele}
-        
-    \section{Kierunki dalszego rozwoju}
-        \input{podsumowanie/sequelbait}
 
+\subsection{Osiągnięte cele}
+    \input{podsumowanie/cele}
 
-
-
-\chapter{Załączniki}
-    \input{zalaczniki}
+\subsection{Kierunki dalszego rozwoju}
+    \input{podsumowanie/sequelbait}
 
 \chapter*{Bibliografia}
     \addcontentsline{toc}{section}{Bibliografia}
-    \input{biblio}
+    \input{biblio_art.tex}
     
-
-
-
 \end{document}
-

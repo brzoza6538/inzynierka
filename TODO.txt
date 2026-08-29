@@ -1,0 +1,85 @@
+Covariance Matrix Adaptation Evolution Strategy (CMA-ES) 
+
+1.1Tło i motywacja 
+    - popierdol o historii?
+
+1.2Cel i hipotezy badawcze
+    - globalne gorzej się skalują zapewniając dokładniejsze przejście
+    - jednym z powodów, parametry przygotowane pod zupełnie inne zadanie, 5*dimension, jest to problem który można załagodzić 
+    - porównaj nl przed i po zmianach parametrów dla iris
+
+
+2Przegląd literatury
+    - mam zrobić cały wykład o algorytmach???
+
+3 badania 
+    1 - ustawienia 
+    2 - kontekst - cel, metodyka 
+        - dodaj dlaczego cec, dlaczego sieci 
+        - problemy o tych samych wymiarach IRIS i 50 nie zachowują sie podobnie
+
+    3 - wyniki 
+    4 - wnioski
+
+badanie 1 - cec 
+
+badanie 2 - iris - 
+    sprawdzenie algosów  wakceptowalnej skali 
+
+badanie 3 - mnist 
+
+badanie 4
+    dostosowane parametry ustalane dla nl-shade vs niedostosowane
+
+badanie 5 
+    adam duży lr - przeskakuje za mocno 
+    adam za mały lr = nie jest wysstarczająco duży żeby poruszać się na zaszumionej 
+ 
+badanie 6 
+    czy batchowanie ma sens
+         - porównaj na iris dla miinbatchy 
+         - dla pełnego batchu przy tej samej ilości ewaluacji 
+         - dla pełnego bathu przy tej samej ilości przejść przez sieć 
+
+
+po każdym badaniu, obserwacje, po całości, wnioski
+
+uwagi implementacyjne
+
+
+
+
+dopisz że by uczciwie porównywać wszystko, każdy algotym pracuje na zbiorze dancyh przeskalowancyh do -1,1
+
+
+
+spisuj końcowe wagi każdemu??
+
+nie trzeba liczyć gradientu - sporo zwalnia zasobów 
+    
+uczenie sieci przez algorytm globalny, ma szansę być zrównolegnione, stochastycznym z kolei nie
+     - testowanie każdego elementu batch równolegle na przykład 
+
+CEC - 
+IRIS - można to wykorzystać w sieciach neuronowych i działa czasami nawet lepiej od stochastycznych
+MNIST - zapuszczone żeby pokazać, że chociaż kod nie jest do tego zoptymalizowany, działa poprawnie i uczy się
+
+
+
+
+
+
+W takiej sytuacji F24/F26 mały krok może działać paradoksalnie gorzej:
+
+lr=0.001
+→ bardzo ostrożny ruch
+→ wejście do lokalnego basenu
+→ małe aktualizacje
+→ trudność w opuszczeniu basenu
+
+lr=0.01
+→ większa eksploracja
+→ większe przeskoki między strukturami
+→ większa szansa znalezienia lepszego basenu
+
+sieć Adam gdzie zwiększasz wymiary 

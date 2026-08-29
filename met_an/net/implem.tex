@@ -1,30 +1,61 @@
-By porównać algorytmy stochastyczne i globalne zaimplementowana została prosta sieć neuronowa do klasyfikacji obrazów z bazy MNIST. 
+By porównać algorytmy stochastyczne i globalne zaimplementowana została prosta sieć neuronowa do klasyfikacji kwiatów ze zbioru IRIS, oraz druga sieć do klasyfikacji obrazów z bazy MNIST.
 
-Dla obu rodzajów algorytmów struktura sieci składa się z warstwy wejściowej z 784 neuronami, warstwy losowego embeddingu o wymiarze 200, dwóch warstw ukrytych po 16 neuronów każda oraz warstwy wyjściowej z 10 neuronami. Wielkości warstw ukrytych zostały wybrane na podstawie najczęściej spotykanych wartości w literaturze.
+W obu sieciach w warstwach ukrytych zastosowano funkcję aktywacji tanh, natomiast w warstwie wyjściowej sieci MNIST zastosowano funkcję Softmax. Funkcja MSE została wykorzystana jako funkcja kosztu. Każda waga i każdy bias są niezależnie inicjalizowane zgodnie z rozkładem normalnym $N(0, {0.1}^2)$.
+
+
+Dla sieci klasyfikującej kwiaty ze zbioru IRIS, warstwa wejściowa składa się z 4 neuronów odpowiadających cechom opisującym próbkę, następnie przechodzi przez dwie warstwy ukryte, każda zawierająca 3 neurony, oraz kończy się warstwą wyjściową zawierającą 3 neurony. Łączna liczba wag i biasów do optymalizacji wynosi 39.
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{met_an//net/network.jpg}
-    \caption{model przykładowej sieci neuronowej}
+    \includegraphics[width=0.7\linewidth]{met_an//net/IRIS_net.jpg}
+    \caption{model sieci neuronowej IRIS}
     % \label{fig:placeholder}
 \end{figure}
 
-Wykorzystując lemat Johnsona-Lindenstraussa, jesteśmy w stanie oszacować jak redukcja wymiarów przestrzeni wpływa na zachowanie zależności pomiędzy osobnikami w tej przestrzeni. Dzięki temu możliwe jest osadzenie danych w przestrzeni o mniejszej liczbie wymiarów kontrolując zniekształcenia zależności między osobnikami. 
+W przypadku sieci MNIST, dla obu rodzajów algorytmów struktura sieci składa się z warstwy wejściowej z 784 neuronami, stałej warstwy projekcji losowego embeddingu o wymiarze 200, służącej do ograniczenia wymiarowości zadania, dwóch warstw ukrytych po 16 neuronów każda oraz warstwy wyjściowej z 10 neuronami. Wielkości warstw ukrytych zostały wybrane na podstawie najczęściej spotykanych wartości w literaturze. Łączna liczba wag i biasów podlegających optymalizacji w pozostałych warstwach wynosi 3658.
 
-dla danego $\epsilon \in (0,1)$ i zbioru $X \subset R^{dim}$ o wielkości $|X| = n$ istnieje mapowanie $f:R^{dim} \rightarrow R^m$ gdzie nowy wymiar $m = O(\frac{\log n}{\epsilon^2})$ które osadza zbiór X do przestrzeni $R^m$ ze zniekształceniem maksymalnym równym $\epsilon$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{met_an//net/MNIST_net.jpg}
+    \caption{model sieci neuronowej MNIST}
+    % \label{fig:placeholder}
+\end{figure}
 
-Warstwa embeddingu losowego Dla 784 wymiarów mapuje osobniki do przestrzeni 200-wymiarowej więc można się spodziewać zniekształceń w zależnościach rzędu 0.12
+\subsubsection{Problem dużej wymiarowości modelu MNIST}
+Wykorzystując lemat Johnsona-Lindenstraussa, można oszacować jak redukcja wymiarów przestrzeni wpływa na zachowanie zależności pomiędzy punktami się w niej znajdującymi. Dzięki temu możliwe jest osadzenie danych w przestrzeni o mniejszej liczbie wymiarów minimalizując zniekształcenia odległości między punktami.
 
-Jako reprezentant algorytmów stochastycznych został wykorzystany algorytm Adam, natomiast do algorytmów globalnych użyty został algorytm CMAES.
+Lemat stwierdza, że dla danego $\epsilon \in (0,1)$ i zbioru $X \subset R^{d}$ o wielkości $|X| = n$ mapowanie $f:R^{d} \rightarrow R^m$ na nowy wymiar $m$ z dużym prawdopodobieństwem będzie miał zniekształcenia zależności między wartościami nie przekraczające $\epsilon$, gdzie $m \geq O(\frac{\log n}{\epsilon^2})$.
 
-W przypadku rozwiązania stochastycznego Zastosowano standardową metodę backpropagacji do uczenia i adaptacji wag i biasów. Optymalizowano funkcję kosztu.
+gdzie dla pary punktów $x_1$ i $x_2$ 
 
-Dla algorytmów globalnych problem ma wymiarowość równą sumie wszystkich trenowanych parametrów, czyli sumę wag i biasów warstw ukrytych i wyjścia. Łącznie 3658 wymiarów. 
+$(1 - \epsilon)||x_1 - x_2||_2^2 \leq ||f(x_1) - f(x_2)||_2^2 \leq (1 + \epsilon)||x_1 - x_2||_2^2$
 
-Optymalizowane było accuracy. Każdemu osobnikowi przydzielano ocenę na podstawie 20 losowo wybranych przykładów ze zbioru treningowego. 
+Według popularnej aproksymacji lematu $m \geq \frac{8 \log n}{\epsilon^2} $, i zbioru danych treningowych MNIST $n = 56000$, dla stałej, losowo inicjalizowanej warstwy projekcji embedding, mapującej punkty o 784 wymiarach do przestrzeni 200-wymiarowej, w celu redukcji liczby wymiarów sieci do optymalizacji, teoretyczna wartość parametru $\epsilon$ wynikająca z przyjętego oszacowania, wynosi $\epsilon \approx 0.43$
 
-Jako wspólną jednostkę czasu przyjęto jedno przejście przez sieć neuronową. W przypadku globalnego algorytmu CMA-ES oznaczało to inkrementację licznika po każdej ocenie pojedynczego osobnika, natomiast w przypadku stochastycznego algorytmu licznik był zwiększany po każdej parze operacji przejścia w przód(forward pass), oraz backpropagacji.
+Natomiast sprawdzając problem empirycznie dla używanego rozwiązania, $N = 10^6$ losowo wybranych par danych zbioru MNIST i warstwy opisanej Embed, inicjalizowanej wagami z przedziału normalnego$N(0, 200)$, wskazuje $\epsilon$  liczony jako
 
-Dla każdego algorytmu zapisywano najlepsze rozwiązania po przejściu przez daną część zasobów. Rozwiązania te były następnie oceniane wykorzystując zbiór testowy, aby określić zmianę accuracy w czasie oraz ECDF  
+$\epsilon_{ij}=|\frac{||f(x_i)-f(x_j)||_2^2}{||x_i-x_j||_2^2}-1|$
 
+którego średnia bezwzględna wartość zniekształcenia kwadratu odległości 
+
+$\overline{\epsilon} = \frac{1}{N} \sum_{(i,j)\in{P}} \epsilon_{ij}$
+
+wynosi $\epsilon \approx 0.1$ z $\epsilon_{max} \approx 0.225$
+
+\subsubsection{Uczenie sieci}
+
+Za jednostkę kosztu obliczeniowego przyjęto przetworzenie jednej próbki przez sieć neuronową.
+
+W przypadku rozwiązania stochastycznego, by dostosować się do implementacji globalnych, wszystkie wagi stanowią d-wymiarowy problem optymalizacji funkcji kosztu, funkcja evaluacji określa średni koszt po przejściu przez batch zbioru treningowego, oraz funkcja gradientu wyznacza średni gradient funkcji kosztu względem wszystkich optymalizowanych parametrów po przejściu przez dokładnie ten sam batch backpropagacją. Pomijająć warstwę embeddingu, wszystkie wagi są optymalizowane. Pojedyńcze przetworzenie jednej próbki ze zbioru treningowego przez całą sieć oznacza inkrementację licznika o jeden
+
+Dla algorytmów globalnych, nie wykorzystujących gradientu do aktualizacji parametrów, nie można było zastosować standardowej metody uczenia. Zamiast tego każdy osobnik populacji reprezentuje unikalny zestaw wartości wag i biasów dla każdej warstwy z wyjątkiem warstwy embed.
+
+Natomiast w funkcji ewaluacji, by uniknąć problemów związanych ze skalowaniem pracy na większym stałym zbiorze danych na raz, jak w algorytmach stochastycznych, określany jest średni koszt pojedyńczego punktu testując jego ułożenie danych na batch-u zbioru treningowego. 
+
+Mniejszy batch jest stopniowo edytowany, wymieniając fragment $b \in (0, 1)$ batchu co $a \in N$ generacji algorytmu. Wystarczająco powoli, by nie zdestabilizować działania całego algorytmu, wprowadzajac za duże szumy, oraz wystarczająco często żeby nie doszło do przeuczenia na niewielkim batchu danych zbioru treningowego. Parametry dobrano eksperymentalnie dla każdego algorytmu tak, aby ograniczyć wpływ zmiany próby treningowej na proces optymalizacji
+
+W związku z tym, każda próbka ze zbioru batch jest przetwarzana dla każdego punktu, licznik operacji jest inkrementowany o $|B|$ po każdym wywołaniu pełnego przykładowego batchu $B$
+
+Dla każdego algorytmu najlepsze rozwiązanie zapisywano w określonych punktach budżetu obliczeniowego, zgodnie ze standardem stosowanym w benchmarkach CEC2013: [1\%, 10\%, 20\%, ... 90\%, 100\%]. Rozwiązania te były następnie oceniane wykorzystując zbiór testowy, aby określić zmianę accuracy oraz loss wraz ze wzrostem budżetu obliczeniowego
 
